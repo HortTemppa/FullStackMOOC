@@ -1,0 +1,21 @@
+title SPA -lomakkeen lähetys
+
+note over selain
+käyttäjä kirjoittaa lomakkeeseen
+jotain ja painaa "Save"
+end note
+
+note over selain
+JavaScript-koodin estää "Save" -painikkeen
+oletusarvoisen toiminnan, jolloin sivu ei uudelleenlataa.
+JS-koodi luo muistiinpanon, lisää
+sen muistiinpanojen listalle ja
+piirtää muistiinpanot uudelleen näytölle.
+Tämän jälkeen js-koodi lähettää uuden muistiinpanon palvelimelle.
+end note
+
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over palvelin
+palvelin tallentaa JSON-muodossa vastaanotetun datan
+end note
